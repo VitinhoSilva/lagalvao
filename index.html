@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Bruno Galvão</title>
+	<link rel="icon" href="./images/barber.png" type="image/png" sizes="16x16">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	<link href="./fonts/font1.css" rel="stylesheet">
+	<link href="./fonts/font2.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  	<nav class="navbar navbar-b navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">BrunoGalvão</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li id="liHome" class="nav-item active"><a class="nav-link js-scroll" href="index.html" class="nav-link">Início</a></li>
+			  <li id="liService" class="nav-item" onclick="activeService()"><a class="nav-link js-scroll" href="#services" class="nav-link">Serviços</a>
+				<script>
+					function activeService(){
+						let liHome = document.getElementById('liHome');
+						let liService = document.getElementById('liService');
+						let liPrecos = document.getElementById('liPrecos');
+						let liProfi = document.getElementById('liProfi');
+						let liGaleria = document.getElementById('liGaleria');
+						let liContato = document.getElementById('liContato');
+						// liHome.className = 'nav-item';
+						liService.className = 'nav-item active';
+						// liPrecos = 'nav-item';
+						// liProfi = 'nav-item';
+						// liGaleria = 'nav-item';
+						// liContato = 'nav-item';
+					}
+				</script>
+			  </li>
+			  <li id="liPrecos" class="nav-item" onclick="activePreco()"><a class="nav-link js-scroll" href="#precos" class="nav-link">Preços</a>
+				<script>
+					function activePreco(){
+						let liHome = document.getElementById('liHome');
+						let liService = document.getElementById('liService');
+						let liPrecos = document.getElementById('liPrecos');
+						let liProfi = document.getElementById('liProfi');
+						let liGaleria = document.getElementById('liGaleria');
+						let liContato = document.getElementById('liContato');
+						// liHome.className = 'nav-item';
+						// liService.className = 'nav-item';
+						liPrecos = 'nav-item active';
+						// liProfi = 'nav-item';
+						// liGaleria = 'nav-item';
+						// liContato = 'nav-item';
+					}
+				</script>
+				</li>
+			  <li id="liProfi" class="nav-item" onclick="activeProfi()"><a class="nav-link js-scroll" href="#barbeiro" class="nav-link">Barbeiro</a>
+				<script>
+					function activeProfi(){
+						let liHome = document.getElementById('liHome');
+						let liService = document.getElementById('liService');
+						let liPrecos = document.getElementById('liPrecos');
+						let liProfi = document.getElementById('liProfi');
+						let liGaleria = document.getElementById('liGaleria');
+						let liContato = document.getElementById('liContato');
+						liHome.className = 'nav-item';
+						liService.className = 'nav-item';
+						liPrecos = 'nav-item';
+						liProfi = 'nav-item active';
+						liGaleria = 'nav-item';
+						liContato = 'nav-item';
+					}
+				</script>
+			</li>
+			  <li id="liGaleria" class="nav-item" onclick="activeGaleria()"><a class="nav-link js-scroll" href="#galeria" class="nav-link">Galeria</a>
+				<script>
+					function activeGaleria(){
+						let liHome = document.getElementById('liHome');
+						let liService = document.getElementById('liService');
+						let liPrecos = document.getElementById('liPrecos');
+						let liProfi = document.getElementById('liProfi');
+						let liGaleria = document.getElementById('liGaleria');
+						let liContato = document.getElementById('liContato');
+						liHome.className = 'nav-item';
+						liService.className = 'nav-item';
+						liPrecos = 'nav-item';
+						liProfi = 'nav-item';
+						liGaleria = 'nav-item active';
+						liContato = 'nav-item';
+					}
+				</script>
+				</li>
+			  <li id="liContato" class="nav-item" onclick="activeContato()"><a class="nav-link js-scroll"href="#contato" class="nav-link">Contato</a>
+				<script>
+					function activeContato(){
+						let liHome = document.getElementById('liHome');
+						let liService = document.getElementById('liService');
+						let liPrecos = document.getElementById('liPrecos');
+						let liProfi = document.getElementById('liProfi');
+						let liGaleria = document.getElementById('liGaleria');
+						let liContato = document.getElementById('liContato');
+						liHome.className = 'nav-item';
+						liService.className = 'nav-item';
+						liPrecos = 'nav-item';
+						liProfi = 'nav-item';
+						liGaleria = 'nav-item';
+						liContato = 'nav-item active';
+					}
+				</script>
+				</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+        	<!-- <a href="https://vimeo.com/45830194" class="icon popup-vimeo d-flex justify-content-center align-items-center">
+        		<span class="icon-play"></a>
+        	</a> -->
+          <div class="col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Encontre seu melhor estilo</h1>
+            <!-- <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://vimeo.com/45830194" class="btn btn-primary px-4 py-3">Book an Appointment</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-intro">
+    	<div class="container-wrap">
+    		<div class="wrap d-md-flex align-items-end">
+	    		<div class="info">
+	    			<div class="row no-gutters">
+	    				<div class="col-md-4 d-flex ftco-animate">
+	    					<div class="icon"><span class="icon-phone"></span></div>
+	    					<div class="text">
+	    						<h3>(83) 98671-0056</h3>
+	    						<p>Ligações e whatsapp</p>
+	    					</div>
+	    				</div>
+	    				<div class="col-md-4 d-flex ftco-animate">
+	    					<div class="icon"><span class="icon-my_location"></span></div>
+	    					<div class="text">
+	    						<h3>R. Comerciante Ferreira da Rocha, 308</h3>
+	    						<p>Mangabeira-JP/PB</p>
+	    					</div>
+	    				</div>
+	    				<div class="col-md-4 d-flex ftco-animate">
+	    					<div class="icon"><span class="icon-clock-o"></span></div>
+	    					<div class="text">
+	    						<h3>Aberto de segunda a sexta</h3>
+	    						<p>9:00am - 18:00pm</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="social pl-md-5 p-4">
+	    			<ul class="social-icon">
+			  <li class="ftco-animate"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5583986710056" target="_blank"><span class="icon-whatsapp"></span></a></li>
+			  <li class="ftco-animate"><a href="https://www.google.com.br/maps/place/Rua+Comerciante+Alfredo+Ferreira+da+Rocha,+308+-+Mangabeira,+Jo%C3%A3o+Pessoa+-+PB,+58055-540/@-7.1649458,-34.8445476,17z/data=!3m1!4b1!4m5!3m4!1s0x7acc260e8345a4f:0x6af9c78dae751e98!8m2!3d-7.1649511!4d-34.8423589" target="_blank"><span class="icon-map-marker"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/_brunogalvaao/" target="_blank"><span class="icon-instagram"></span></a></li>
+            </ul>
+	    		</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center mb-4">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Bem vindo a <span>Bruno Galvão</span> Barbearia</h2>
+            <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+          </div>
+        </div>
+    		<div class="row justify-content-center">
+    			<div class="col-md-8 text-center ftco-animate">
+    				<p>Te proporcionando o seu melhor estilo</p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section id="services" class="ftco-section ftco-bg-dark">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Serviços</h2>
+            <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+            <p class="mt-5">Com tradição desde 2016 oferecendo os melhores serviços de barbearia</p>
+          </div>
+        </div>
+    		<div class="row">
+          <div class="col-md-3 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div class="icon d-flex justify-content-center align-items-center mb-4">
+              	<span class="flaticon-scissor-and-comb"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Cortes de cabelo &amp; estilo</h3>
+                
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div class="icon d-flex justify-content-center align-items-center mb-4">
+              	<span class="flaticon-male-head-hair-and-beard"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Design de barba</h3>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div class="icon d-flex justify-content-center align-items-center mb-4"><span class="flaticon-heads-hairs-and-scissors"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Design de sobrancelha</h3>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div class="icon d-flex justify-content-center align-items-center mb-4"><span class="flaticon-young-male-short-irregular-hair-on-head-and-a-small-beard"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Depilação de barba</h3>
+              </div>
+            </div>    
+          </div>
+        </div>
+    	</div>
+    </section>
+
+    <section id="precos" class="ftco-section">
+    	<!-- <div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">What We Do</h2>
+            <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+            <p class="mt-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+    	</div>
+    	<div class="container-wrap">
+    		<div class="row no-gutters d-flex">
+    			<div class="col-md-4 d-flex ftco-animate">
+    				<div class="services-wrap d-flex">
+    					<a href="#" class="img" style="background-image: url(images/work-1.jpg);"></a>
+    					<div class="text p-4">
+    						<h3>Hair Style </h3>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia </p>
+    						<span><a href="#">Read more</a></span>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex ftco-animate">
+    				<div class="services-wrap d-flex">
+    					<a href="#" class="img" style="background-image: url(images/work-2.jpg);"></a>
+    					<div class="text p-4">
+    						<h3>Trimming</h3>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    						<span><a href="#">Read more</a></span>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex ftco-animate">
+    				<div class="services-wrap d-flex">
+    					<a href="#" class="img" style="background-image: url(images/work-3.jpg);"></a>
+    					<div class="text p-4">
+    						<h3>Traditional Haircuts Mens </h3>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    						<span><a href="#">Read more</a></span>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="col-md-4 d-flex ftco-animate">
+    				<div class="services-wrap d-flex">
+    					<a href="#" class="img order-md-last" style="background-image: url(images/work-4.jpg);"></a>
+    					<div class="text p-4">
+    						<h3>Hair Style for Womens</h3>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia </p>
+    						<span><a href="#">Read more</a></span>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex ftco-animate">
+    				<div class="services-wrap d-flex">
+    					<a href="#" class="img order-md-last" style="background-image: url(images/work-5.jpg);"></a>
+    					<div class="text p-4">
+    						<h3>Trimming </h3>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    						<span><a href="#">Read more</a></span>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex ftco-animate">
+    				<div class="services-wrap d-flex">
+    					<a href="#" class="img order-md-last" style="background-image: url(images/work-6.jpg);"></a>
+    					<div class="text p-4">
+    						<h3>Traditional Haircuts Mens </h3>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    						<span><a href="#">Read more</a></span>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div> -->
+
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3 mt-5 pt-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Preços</h2>
+            <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+          </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-6">
+        		<div class="pricing-entry ftco-animate">
+        			<div class="d-flex text align-items-center">
+        				<h3><span>Corte</span></h3>
+        				<span class="price">$19.99</span>
+        			</div>
+        			<div class="d-block">
+        				<p>Qualquer tipo de corte</p>
+        			</div>
+        		</div>
+        		<div class="pricing-entry ftco-animate">
+        			<div class="d-flex text align-items-center">
+        				<h3><span>Design Barba</span></h3>
+        				<span class="price">$14.99</span>
+        			</div>
+        			<div class="d-block">
+        				<p>Design de barba</p>
+        			</div>
+        		</div>
+        	</div>
+
+        	<div class="col-md-6">
+        		<div class="pricing-entry ftco-animate">
+        			<div class="d-flex text align-items-center">
+        				<h3><span>Sobrancelha</span></h3>
+        				<span class="price">$9.99</span>
+        			</div>
+        			<div class="d-block">
+        				<p>Design sobrancelha</p>
+        			</div>
+        		</div>
+				<div class="pricing-entry ftco-animate">
+        			<div class="d-flex text align-items-center">
+        				<h3><span>Depilação barba</span></h3>
+        				<span class="price">$14.99</span>
+        			</div>
+        			<div class="d-block">
+        				<p>Depilação de barba</p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    	</div>
+    </section>
+
+    <!-- <section class="ftco-section ftco-discount img" style="background-image: url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center" data-scrollax-parent="true">
+					<div class="col-md-7 text-center discount ftco-animate" data-scrollax=" properties: { translateY: '-30%'}">
+						<h3>Save up to 25% Off</h3>
+						<h2 class="mb-4">All Services Discount</h2>
+						<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+						<p><a href="#" class="btn btn-primary px-4 py-3">Appointment</a></p>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+    <section id="barbeiro" class="ftco-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Barbeiro</h2>
+            <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+          </div>
+		</div>
+		
+		<div class="col-sm" style="display: flex; align-items: center; justify-content: center;">
+			<div class="row">
+				<div class="col-sm" style="display: flex; align-items: center; justify-content: center;">
+					<div class="staff">
+						  <div class="img mb-4" style="background-image: url(images/BrunoBarber1.jpeg);"></div>
+						  <div class="info text-center">
+							  <h3><a href="teacher-single.html"></a>Bruno Galvão</a></h3>
+							  <span class="position">Barbeiro Especialista</span>
+							  <div class="text">
+								<p>Experiência desde 2016</p>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</div> 
+      </div>
+    </section>
+
+	
+    <!-- <section id="produtos" class="ftco-section ftco-bg-dark">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Produtos</h2>
+            <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-3 ftco-animate">
+    				<div class="product-entry text-center">
+    					<a href="#"><img src="images/prod-1.png" class="img-fluid" alt="Colorlib Template"></a>
+    					<div class="text">
+    						<p class="rate"><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star_half"></span></p>
+    						<h3><a href="#">Shaves 01</a></h3>
+    						<span class="price mb-4">$150</span>
+    						<p><a href="#" class="btn btn-primary">Add to cart</a></p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-3 ftco-animate">
+    				<div class="product-entry text-center">
+    					<a href="#"><img src="images/prod-2.png" class="img-fluid" alt="Colorlib Template"></a>
+    					<div class="text">
+    						<p class="rate"><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star_half"></span></p>
+    						<h3><a href="#">Shaves 01</a></h3>
+    						<span class="price mb-4">$150</span>
+    						<p><a href="#" class="btn btn-primary">Add to cart</a></p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-3 ftco-animate">
+    				<div class="product-entry text-center">
+    					<a href="#"><img src="images/prod-3.png" class="img-fluid" alt="Colorlib Template"></a>
+    					<div class="text">
+    						<p class="rate"><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star_half"></span></p>
+    						<h3><a href="#">Shaves 01</a></h3>
+    						<span class="price mb-4">$150</span>
+    						<p><a href="#" class="btn btn-primary">Add to cart</a></p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-3 ftco-animate">
+    				<div class="product-entry text-center">
+    					<a href="#"><img src="images/prod-4.png" class="img-fluid" alt="Colorlib Template"></a>
+    					<div class="text">
+    						<p class="rate"><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star2"></span><span class="icon-star_half"></span></p>
+    						<h3><a href="#">Shaves 01</a></h3>
+    						<span class="price mb-4">$150</span>
+    						<p><a href="#" class="btn btn-primary">Add to cart</a></p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+
+    <section id="galeria" class="ftco-gallery">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Galeria</h2>
+            <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+          </div>
+        </div>
+    	</div>
+    	<div class="container-wrap">
+    		<div class="row no-gutters">
+					<div class="col-md-3 ftco-animate">
+						<a href="#galeria" class="gallery img d-flex align-items-center" style="background-image: url(images/BrunoBarber1.jpeg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-search"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="#galeria" class="gallery img d-flex align-items-center" style="background-image: url(images/BrunoBarber4.jpeg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-search"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="#galeria" class="gallery img d-flex align-items-center" style="background-image: url(images/BrunoBarber2.jpeg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-search"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="#galeria" class="gallery img d-flex align-items-center" style="background-image: url(images/BrunoBarber3.jpeg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-search"></span>
+    					</div>
+						</a>
+					</div>
+        </div>
+    	</div>
+    </section>
+
+
+		<section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+        		<div class="row">
+		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		              	<div class="icon"><span class="flaticon-scissor-and-comb"></span></div>
+		              	<strong class="number" data-number="3000">0</strong>
+		              	<span>Clientes felizes</span>
+		              </div>
+		            </div>
+		          </div>
+
+		        </div>
+        </div>
+      </div>
+    </section>
+		
+    <footer id="contato" class="ftco-footer ftco-section img">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">    
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Entre em contato</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+					<li><a href="https://www.google.com.br/maps/place/Rua+Comerciante+Alfredo+Ferreira+da+Rocha,+308+-+Mangabeira,+Jo%C3%A3o+Pessoa+-+PB,+58055-540/@-7.1649458,-34.8445476,17z/data=!3m1!4b1!4m5!3m4!1s0x7acc260e8345a4f:0x6af9c78dae751e98!8m2!3d-7.1649511!4d-34.8423589" target="_blank"><span class="icon icon-map-marker"></span><span class="text">R. Comerciante Ferreira da Rocha, 308, Mangabeira, JP/PB</span></a></li>
+					<li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5583986710056" target="_blank"><span class="icon icon-phone"></span><span class="text">(83) 98671-0056</span></a></li>
+	              </ul>
+				</div>
+				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+					<li class="ftco-animate"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5583986710056" target="_blank"><span class="icon-whatsapp"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.google.com.br/maps/place/Rua+Comerciante+Alfredo+Ferreira+da+Rocha,+308+-+Mangabeira,+Jo%C3%A3o+Pessoa+-+PB,+58055-540/@-7.1649458,-34.8445476,17z/data=!3m1!4b1!4m5!3m4!1s0x7acc260e8345a4f:0x6af9c78dae751e98!8m2!3d-7.1649511!4d-34.8423589" target="_blank"><span class="icon-map-marker"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.instagram.com/_brunogalvaao/" target="_blank"><span class="icon-instagram"></span></a></li>
+				  </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
