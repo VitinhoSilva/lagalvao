@@ -30,165 +30,83 @@
   </head>
   <body>
 
-  	<nav class="navbar navbar-b navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  	<nav class="navbar navbar-b navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="mainNav">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">La Galvão</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
+	      <div class="navbar-collapse collapse justify-content-end" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li id="liHome" class="nav-item"><a class="nav-link js-scroll" href="index.html" class="nav-link">Início</a></li>
-			  <li id="liService" class="nav-item" onclick="activeService()"><a class="nav-link js-scroll" href="#services" class="nav-link">Serviços</a>
-				<script>
-					function activeService(){
-						let liHome = document.getElementById('liHome');
-						let liService = document.getElementById('liService');
-						let liPrecos = document.getElementById('liPrecos');
-						let liProfi = document.getElementById('liProfi');
-						let liGaleria = document.getElementById('liGaleria');
-						let liContato = document.getElementById('liContato');
-						liHome.className = 'nav-item';
-						liService.className = 'nav-item active';
-						liPrecos.className = 'nav-item';
-						liProfi.className = 'nav-item';
-						liGaleria.className = 'nav-item';
-						liContato.className = 'nav-item';
-					}
-				</script>
-			  </li>
-			  <li id="liPrecos" class="nav-item" onclick="activePreco()"><a class="nav-link js-scroll" href="#precos" class="nav-link">Preços</a>
-				<script>
-					function activePreco(){
-						let liHome = document.getElementById('liHome');
-						let liService = document.getElementById('liService');
-						let liPrecos = document.getElementById('liPrecos');
-						let liProfi = document.getElementById('liProfi');
-						let liGaleria = document.getElementById('liGaleria');
-						let liContato = document.getElementById('liContato');
-						liHome.className = 'nav-item';
-						liService.className = 'nav-item';
-						liPrecos.className = 'nav-item active';
-						liProfi.className = 'nav-item';
-						liGaleria.className = 'nav-item';
-						liContato.className = 'nav-item';
-					}
-				</script>
-				</li>
-			  <li id="liProfi" class="nav-item" onclick="activeProfi()"><a class="nav-link js-scroll" href="#barbeiro" class="nav-link">Barbeiro</a>
-				<script>
-					function activeProfi(){
-						let liHome = document.getElementById('liHome');
-						let liService = document.getElementById('liService');
-						let liPrecos = document.getElementById('liPrecos');
-						let liProfi = document.getElementById('liProfi');
-						let liGaleria = document.getElementById('liGaleria');
-						let liContato = document.getElementById('liContato');
-						liHome.className = 'nav-item';
-						liService.className = 'nav-item';
-						liPrecos.className = 'nav-item';
-						liProfi.className = 'nav-item active';
-						liGaleria.className = 'nav-item';
-						liContato.className = 'nav-item';
-					}
-				</script>
-			</li>
-			  <li id="liGaleria" class="nav-item" onclick="activeGaleria()"><a class="nav-link js-scroll" href="#galeria" class="nav-link">Galeria</a>
-				<script>
-					function activeGaleria(){
-						let liHome = document.getElementById('liHome');
-						let liService = document.getElementById('liService');
-						let liPrecos = document.getElementById('liPrecos');
-						let liProfi = document.getElementById('liProfi');
-						let liGaleria = document.getElementById('liGaleria');
-						let liContato = document.getElementById('liContato');
-						liHome.className = 'nav-item';
-						liService.className = 'nav-item';
-						liPrecos.className = 'nav-item';
-						liProfi.className = 'nav-item';
-						liGaleria.className = 'nav-item active';
-						liContato.className = 'nav-item';
-					}
-				</script>
-				</li>
-			  <li id="liContato" class="nav-item" onclick="activeContato()"><a class="nav-link js-scroll"href="#contato" class="nav-link">Contato</a>
-				<script>
-					function activeContato(){
-						let liHome = document.getElementById('liHome');
-						let liService = document.getElementById('liService');
-						let liPrecos = document.getElementById('liPrecos');
-						let liProfi = document.getElementById('liProfi');
-						let liGaleria = document.getElementById('liGaleria');
-						let liContato = document.getElementById('liContato');
-						liHome.className = 'nav-item';
-						liService.className = 'nav-item';
-						liPrecos.className = 'nav-item';
-						liProfi.className = 'nav-item';
-						liGaleria.className = 'nav-item';
-						liContato.className = 'nav-item active';
-					}
-				</script>
-				</li>
+	          <li id="liHome" class="nav-item"><a class="nav-link js-scroll active" href="#inicio">Início</a></li>
+			  <li id="liService" class="nav-item"><a class="nav-link js-scroll" href="#services">Serviços</a></li>
+			  <li id="liPrecos" class="nav-item"><a class="nav-link js-scroll" href="#precos">Preços</a></li>
+			  <li id="liProfi" class="nav-item"><a class="nav-link js-scroll" href="#barbeiro">Barbeiro</a></li>
+			  <li id="liGaleria" class="nav-item"><a class="nav-link js-scroll" href="#galeria">Galeria</a></li>
+			  <li id="liContato" class="nav-item"><a class="nav-link js-scroll"href="#contato">Contato</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-    
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-        	<!-- <a href="https://vimeo.com/45830194" class="icon popup-vimeo d-flex justify-content-center align-items-center">
-        		<span class="icon-play"></a>
-        	</a> -->
-          <div class="col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Encontre seu melhor estilo</h1>
-            <!-- <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://vimeo.com/45830194" class="btn btn-primary px-4 py-3">Book an Appointment</a></p> -->
-          </div>
-        </div>
-      </div>
-    </div>
+	
+	<section id="inicio">
+		<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+				  <!-- <a href="https://vimeo.com/45830194" class="icon popup-vimeo d-flex justify-content-center align-items-center">
+					  <span class="icon-play"></a>
+				  </a> -->
+				<div class="col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+				  <h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Encontre seu melhor estilo</h1>
+				  <!-- <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://vimeo.com/45830194" class="btn btn-primary px-4 py-3">Book an Appointment</a></p> -->
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <section class="ftco-intro">
+			  <div class="container-wrap">
+				  <div class="wrap d-md-flex align-items-end">
+					  <div class="info">
+						  <div class="row no-gutters">
+							  <div class="col-md-4 d-flex ftco-animate">
+								  <div class="icon"><span class="icon-phone"></span></div>
+								  <div class="text">
+									  <h3>(83) 98671-0056</h3>
+									  <p>Ligações e whatsapp</p>
+								  </div>
+							  </div>
+							  <div class="col-md-4 d-flex ftco-animate">
+								  <div class="icon"><span class="icon-my_location"></span></div>
+								  <div class="text">
+									  <h3>R. Comerciante Ferreira da Rocha, 308</h3>
+									  <p>Mangabeira-JP/PB</p>
+								  </div>
+							  </div>
+							  <div class="col-md-4 d-flex ftco-animate">
+								  <div class="icon"><span class="icon-clock-o"></span></div>
+								  <div class="text">
+									  <h3>Aberto de segunda a sábado</h3>
+									  <p>9:00am - 18:00pm</p>
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="social pl-md-5 p-4">
+						  <ul class="social-icon">
+					<li class="ftco-animate"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5583986710056" target="_blank"><span class="icon-whatsapp"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.google.com.br/maps/place/Rua+Comerciante+Alfredo+Ferreira+da+Rocha,+308+-+Mangabeira,+Jo%C3%A3o+Pessoa+-+PB,+58055-540/@-7.1649458,-34.8445476,17z/data=!3m1!4b1!4m5!3m4!1s0x7acc260e8345a4f:0x6af9c78dae751e98!8m2!3d-7.1649511!4d-34.8423589" target="_blank"><span class="icon-map-marker"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.instagram.com/lagalvaobarbearia/" target="_blank"><span class="icon-instagram"></span></a></li>
+				  </ul>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+	</section>
 
-    <section class="ftco-intro">
-    	<div class="container-wrap">
-    		<div class="wrap d-md-flex align-items-end">
-	    		<div class="info">
-	    			<div class="row no-gutters">
-	    				<div class="col-md-4 d-flex ftco-animate">
-	    					<div class="icon"><span class="icon-phone"></span></div>
-	    					<div class="text">
-	    						<h3>(83) 98671-0056</h3>
-	    						<p>Ligações e whatsapp</p>
-	    					</div>
-	    				</div>
-	    				<div class="col-md-4 d-flex ftco-animate">
-	    					<div class="icon"><span class="icon-my_location"></span></div>
-	    					<div class="text">
-	    						<h3>R. Comerciante Ferreira da Rocha, 308</h3>
-	    						<p>Mangabeira-JP/PB</p>
-	    					</div>
-	    				</div>
-	    				<div class="col-md-4 d-flex ftco-animate">
-	    					<div class="icon"><span class="icon-clock-o"></span></div>
-	    					<div class="text">
-	    						<h3>Aberto de segunda a sábado</h3>
-	    						<p>9:00am - 18:00pm</p>
-	    					</div>
-	    				</div>
-	    			</div>
-	    		</div>
-	    		<div class="social pl-md-5 p-4">
-	    			<ul class="social-icon">
-			  <li class="ftco-animate"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5583986710056" target="_blank"><span class="icon-whatsapp"></span></a></li>
-			  <li class="ftco-animate"><a href="https://www.google.com.br/maps/place/Rua+Comerciante+Alfredo+Ferreira+da+Rocha,+308+-+Mangabeira,+Jo%C3%A3o+Pessoa+-+PB,+58055-540/@-7.1649458,-34.8445476,17z/data=!3m1!4b1!4m5!3m4!1s0x7acc260e8345a4f:0x6af9c78dae751e98!8m2!3d-7.1649511!4d-34.8423589" target="_blank"><span class="icon-map-marker"></span></a></li>
-              <li class="ftco-animate"><a href="https://www.instagram.com/lagalvaobarbearia/" target="_blank"><span class="icon-instagram"></span></a></li>
-            </ul>
-	    		</div>
-    		</div>
-    	</div>
-    </section>
 
     <section class="ftco-section">
     	<div class="container">
